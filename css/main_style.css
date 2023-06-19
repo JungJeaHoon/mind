@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300&family=Noto+Sans+KR:wght@300;500;700&family=Poppins:ital,wght@0,400;0,500;1,100;1,200&display=swap');
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'Noto Sans KR','Geologica', 'Poppins',sans-serif; }
+.wrap4 {
+    max-width: 650px;
+    min-width: 350px;
+    margin: auto;
+    padding: 0 20px;
+    background: linear-gradient(#C39DFF ,#FBE4F7,#CAEFFF,#C39DFF);
+    padding-bottom: 80px;
+    color:#5C5C60;
+}
+a {color:#5C5C60;}
+:root {
+    
+    --main-color: #5C5C60;
+    --point-color1:#CAEFFF;
+    --point-color2:#FBE4F7;
+    --point-color3:#140927;
+    --point-color4:#00063C;
+    --point-color5:#3d15ac;
+}
+
+
+/************************ header ***********************************/
+
+header {
+    position: relative;
+}
+.gnbBtn {
+    float: left;
+    width: 60px;
+    height: 60px;    
+    padding: 10px 20px;
+    background: linear-gradient(#00063C,#3d15ac);
+    background: linear-gradient(#C39DFF ,#FBE4F7,#CAEFFF,#C39DFF);
+
+    position: fixed;
+    border-radius: 9999px;    
+    top: 23px;
+    margin-left: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+.gnbBtn > span {
+    position: relative;    
+}
+.ham {
+    color: #fff;
+    font-size: 30px;
+    top: 1px;
+    position: absolute;
+    right: -23px;
+}
+.mainlogo {
+    float: right;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+/************************ section1 ***********************************/
+
+.sec1 {
+    width: 100%;    
+    height: 680px;
+    padding-top: 80px;
+}
+.main_visual {
+    border-radius: 300px 300px 0 0;
+    overflow: hidden;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 5px 3px 5px rgba(158, 155, 155, 0.5);
+}
+.visual {
+    position: relative;
+    width: 100%;
+}
+.main_text {
+    position: absolute;
+    left: 41px;
+    bottom: 80px;
+    color: #fff;
+}
+.main_text > h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    
+}
+.main_text > span {
+    font-size: 25px;
+}
+.main_text > p {
+    margin-top: 20px;
+    line-height: 40px;
+    font-family: 'KyoboHandwriting2021sjy';
+    font-size: 24px;
+}
+
+.main_video {
+    max-width: 1090px;
+}
+
+
+/************************ section2 ***********************************/
+
+
+.icon4 {
+    margin: 0 5px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+.icon4 > div {
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 5px 3px 5px rgba(131, 127, 127, 0.5);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.icon4 > div > a {
+    display: block;
+    width: 100%;
+    padding: 30px;
+}
+.icon4 > div > a > p {
+    font-size: 12px;
+    margin-top: 5px;
+} 
+
+
+
+/************************ section3 ***********************************/
+
+
+.box_sw{
+    height: 280px;
+    position: relative;
+    width: 100%; 
+    margin: 0 auto;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.silder_wrapper {
+    position: relative;
+    width: 100%;    
+    overflow: hidden;
+    max-width: 650px;
+    margin:0 auto;
+    height: 300px;
+    overflow: hidden;
+    }
+.swiper-slide {    
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;    
+}
+.sildees > div > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.swiper-slide:not(:last-child) {
+    margin-right: 30px;
+    }
+.swiper-slide img {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    }
+.slide-txt-wrap {
+    margin-bottom: 30px;
+}
+.slide-txt {
+    font-size: 20px;
+}
+.go-wrap {
+    position: relative;
+}
+.sec-txt {
+    position: absolute;
+    bottom: 20px;
+    left: -71px;
+}
+/************************ footer ***********************************/
+
+footer {
+    position: relative;
+    
+    max-width: 650px;
+    min-width: 350px;
+    margin: auto;
+}
+footer > div {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+    background: #fff;
+    
+}
+
+.fa-house , .fa-user , .fa-magnifying-glass {
+    font-size: 30px;
+}
+
+
+/************************ gnb ***********************************/
+
+
+/*좌측 슬라이더 메뉴 부분*/
+.dark { 
+    position:fixed; 
+    background:rgba(0,0,0,0.4);  
+    z-index:100;
+    inset:0px; 
+    display: none;
+/* inset -상위 요소까지의 거리를 설정, 일종의 margin설정, 안쪽으로 나자신이 줄어들면서 표현 */
+}
+.gnb_open { 
+    position:fixed; 
+    top:0; left:0; 
+    bottom:0; 
+    width:304px; 
+    background: linear-gradient(#C39DFF ,#FBE4F7,#CAEFFF,#C39DFF);
+    z-index:101; 
+    overflow:hidden; 
+    transform: translateX(-100%);
+    transition: .3s ease-in;
+}
+.gnb_open .inner {
+    height:100%; width:170px;  
+    margin: auto;
+    box-sizing:content-box;}
+.info_user {
+    text-align: center;
+    margin-top: 50px;
+}  
+.info_user > div  {
+    overflow: hidden;
+}
+.info_user > div > img {
+    width: 100%;
+}
+.info_user > div >p {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 999px;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 13px;
+}
+.listWrap {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 150px;
+    margin: auto;
+}
+.list_menu { padding:30px 0; }
+.list_menu>li{     
+    border-bottom:1px solid #a7a3a3;
+    padding-bottom: 1rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/*화면에  639px보다 컸을 경우*/
+@media screen and (min-width:640px) {
+.gnb_open { width:400px; }
+.gnb_open .inner { width:400px; }
+}
+
+
+
+@media (max-width : 420px){
+    .swiper-slide{
+        width: 200px !important;
+    }
+}

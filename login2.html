@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic2.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/c9574cea71.js" crossorigin="anonymous"></script>
+    <script defer src="js/login2.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="logo">
+                <img src="img/케릭터.png" alt="캐릭터">
+                <h1>마음챙김</h1>
+                <p>Remember everthing important</p>
+            </div>
+            <div class="box-wrap">                
+                <button class="login">
+                    <img src="img/pngwing.com.png" alt="google">
+                    <p>Continue with Google</p>
+                </button>                
+                <div>
+                    <p class="line">or</p>
+                </div>
+                <form method="post" action="/weather3.html"  id="login-form">
+                    <div class="box2">
+                        <input class="email" type="text" name="userName" placeholder="Email 을 입력하세요">  
+                        <div class="emailError" class="error"></div>  
+                    </div>
+                    <div>
+                        <input class="password" type="password" name="userPassword" placeholder="비밀번호를 입력하세요">   
+                        <div class="passwordError" class="error"></div>  
+                    </div>               
+                    <div class="box3">                    
+                        <input type="submit" value="Login" class="continue">                    
+                    </div>
+                </form><!--form : END-->
+            </div>            
+            <div class="check">
+                <input type="checkbox" checked>Remember me for 30 days
+                <p>Don't have an account?</p>
+                <a href="Create_account_login3.html"><span>Create account</span></a>
+            </div>
+        </div>            
+    </div>
+<script>
+    /****** login 가져오기 ********/
+
+    /*
+    폼테그를 사용해서 감싸는것은 기본
+    1. 폼의 기본기능을 막는다
+    2. 각각 인풋의 입력값 변수 지정
+    3. 현재 로컬스토리지에 있는 입력값을 변수 지정
+    4. if문 작성 - 유저가 입력한 입력값과 저장된 입력값이 같아?
+        -같다면 넘어갈 곳을 지정하고, 틀리다면 경고문 띄우기
+    */
+        const loginForm = document.getElementById('login-form');
+
+    loginForm.addEventListener('submit',(event)=>{
+        event.preventDefault();
+
+        const userNameInput = document.querySelector('input[name="userName"]');
+        const userPasswordInput = document.querySelector('input[name="userPassword"]');
+        const storedUserName = localStorage.getItem('email');
+        const storedUserPassword = localStorage.getItem('password');
+
+        const enteredUserName = userNameInput.value;
+        const enteredUserPassword = userPasswordInput.value;    
+
+        if (enteredUserName === storedUserName && enteredUserPassword === storedUserPassword) {
+            // 로그인 성공 시 다음 페이지로 이동하도록 코드를 작성해야 합니다.
+            window.location.href = 'weather3.html';
+        } else {
+            alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+        }
+    })
+</script>
+</body>
+</html> 

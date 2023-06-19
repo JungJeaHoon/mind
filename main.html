@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main화면</title>
+        <link rel="stylesheet" href="css/reset.css">        
+        <link rel="stylesheet" href="css/main_style.css">
+        <script src="js/prefixfree.min.js"></script>
+        <script src="https://kit.fontawesome.com/c9574cea71.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script defer src="js/main4.js"></script>
+</head>
+<body>
+    <div class="wrap4">
+        <header>
+            <div class="gnbBtn">
+                <span><i class="fa-solid fa-chart-simple ham"></i></span>
+            </div>
+            <h1 class="mainlogo">
+                <a href="weather3.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+            </h1>
+        </header>
+        <main>
+            <section class="sec1">
+                <div class="main_visual">
+                    <div class="visual">
+                        <!-- <img src="img/mainvisual.png" alt=""> -->
+                        <video controls autoplay loop class="main_video">
+                            <source src="img/mainVisual.mp4"  type="video/mp4">
+                        </video>   
+                        <div class="main_text">
+                            <h2>JUST FOR U</h2>
+                            <span>we will special day</span>
+                            <p>이걸 기억 하겠다고 약속해 줘.<br>
+                                넌 네가 믿는것보다 더 용감하며,<br>
+                                보기보다 강하고,
+                                네 생각보다 더 똑똑하단 걸.<br>
+                                -곰돌이 푸</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec2">
+                <div class="icon4">                    
+                    <div>
+                        <a href="play1.html">
+                            <img src="img/icon/명상.png" alt="명상">
+                            <p>명상</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mindList.html">
+                            <img src="img/icon/구름 1.png" alt="마음기록">
+                            <p>마음기록</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="play2.html">
+                            <img src="img/icon/수면.png" alt="수면">
+                            <p>수면</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="play3.html">
+                            <img src="img/icon/심리.png" alt="심리">
+                            <p>심리</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="play4.html">
+                            <img src="img/icon/호흡.png" alt="호흡">
+                            <p>호흡</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="play5.html">
+                            <img src="img/icon/Headphone.png" alt="호흡">
+                            <p>음악</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="sec3">                
+                <div class="slide-txt-wrap">
+                    <p class="slide-txt">마음이 쉬어가고 싶을때</p>
+                </div>
+                <div class="box_sw"><!--얘한테 position: relative; 줘서 기준을 box_sw로 줬다-->
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="play6.html" class="go-wrap">
+                                    <img src="./img/vi16.jpg" alt="">
+                                    <p class="sec-txt">아침명상</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play7.html" class="go-wrap">
+                                    <img src="./img/vi9.jpg" alt="">
+                                    <p class="sec-txt">바로 잠들기</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play8.html" class="go-wrap">
+                                    <img src="./img/vi14.jpg" alt="">
+                                    <p class="sec-txt">안정화 호흡</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play9.html" class="go-wrap">
+                                    <img src="./img/vi19.jpg" alt="">
+                                    <p class="sec-txt">집중</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play10.html" class="go-wrap">
+                                    <img src="./img/main11.jpg" alt="">
+                                    <p class="sec-txt">우울</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play11.html" class="go-wrap">
+                                    <img src="./img/vi2.jpg" alt="">
+                                    <p class="sec-txt">불안</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="play12.html" class="go-wrap">
+                                    <img src="img/vi12.jpg" alt="">
+                                    <p class="sec-txt">퇴근길</p>
+                                </a>
+                            </div>                            
+                        </div><!--swiper-wrapper : END-->
+                    </div><!--swiper mySwiper : END-->
+                    
+                </div><!--box : END-->
+                
+            </section>
+        </main>        
+    </div>
+    <footer>
+            <div>
+                <div><a href="main.html"><i class="fa-solid fa-house"></i></a></div>
+                <div><a href="myPage.html"><i class="fa-solid fa-user"></i></a></div>
+                <div><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </div>
+        </footer>
+    <div class="dark"></div>
+    <div class="gnb_open">
+        <div class="inner">
+            <div class="info_user">
+                <div><img src="img/케릭터.png" alt="캐릭터"></div>
+                <div>
+                    <p>마음챙김과 함께한 105일</p>
+                </div>
+            </div>
+            <div class="listWrap">
+                <ul class="list_menu">
+                    <li>
+                        <a href="play1.html" class="btn_menu">명 상</a>
+                    </li>
+                    <li class="line">
+                        <a href="mindList.html" class="btn_menu">마음기록</a>
+                    </li>
+                    <li>
+                        <a href="play2.html" class="btn_menu btn_sub">수 면</a>
+                    </li>
+                    <li class="line">
+                        <a href="play3.html" class="btn_menu btn_sub">심 리</a>
+                    </li>
+                    <li>
+                        <a href="play4.html" class="btn_menu">호 흡</a>
+                    </li>
+                    <li class="line">
+                        <a href="play5.html" class="btn_menu">음 악</a>
+                    </li>          
+                </ul>  
+            </div> 
+        </div>
+    </div>
+</div>
+</body>
+</html>
